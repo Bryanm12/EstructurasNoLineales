@@ -1,18 +1,10 @@
-## Getting Started
+Version 2.2.1
+Bryan Maita
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+El codigo de la clase insert funciona agregando el valor menor a la parte derecha de los hijos del arbol binario, mientras que, si el valor es mayor, debería ir a la izquierda del todo, construyendo así un arbola binario donde los valores menores al valor principal vayan al lado derecho y los valores mayores al lado izquierdo
 
-## Folder Structure
+El codigo de la clase invert funciona obteniendo los valores del lado derecho para ponerlos en el izquierdo, así llegando a invertir el arbol binario
 
-The workspace contains two folders by default, where:
+El codigo de la clase list Funciona llamadno a un método que se encargara de insertar los valores del arbol binario mientras este desciende de niveles, obteniendo los valores del lado derecho, luego los valores del lado izquierdo y agregandolos a una lista, esto se hace de manera recursiva
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+El codigo deph obtiene el valor de los hijos del atbol binario y va contabilizando con la clase math, cuando este llega al fondo y ve que un hijo no tiene mas hijos entonces devulve la cantidad contada hasta aquel momento
