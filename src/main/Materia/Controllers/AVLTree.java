@@ -33,24 +33,29 @@ public class AVLTree {
 
         //Calcular el balance
         int balance = getBalance(node);
+        System.out.println("Valor insertado: "+node.getValue()+" Balance es: "+balance);
 
         ///si el nodo está desbalanceado se tiene 3 casos 
         
         //Caso Izquierda - Izquierda
         if(balance >1 && value < node.getLeft().getValue()){
+            System.out.println("Left rotate: "+node.getValue()+" Balance es: "+balance);
             return rightRotate(node);
         }
         //Caso Derecha - Derecha
         if(balance<-1 && value> node.getRight().getValue()){
+            System.out.println("Right rotate: "+node.getValue()+" Balance es: "+balance);
             return leftRotate(node);
         }
         //Caso Izquierda - Derecha
         if(balance>1 && value>node.getLeft().getValue()){
+            System.out.println("Left rotate: "+node.getValue()+" Balance es: "+balance);
             node.setLeft(leftRotate(node.getLeft()));
             return rightRotate(node);
         }
         //Caso Derecha - Izquierda
         if(balance<-1 && value< node.getRight().getValue()){
+            System.out.println("Right rotate: "+node.getValue()+" Balance es: "+balance);
             node.setRight(rightRotate(node.getRight()));
             return leftRotate(node);
         }

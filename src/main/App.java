@@ -35,7 +35,7 @@ public class App {
         arbolBinario.postOrderLoop(nodeRoot);
         System.out.println("\nPostOrder - Recursivo");
         arbolBinario.postOrderRecursivo(nodeRoot);
-        System.out.println("\n InOrder - Recursivo");
+        System.out.println("\n InOrder - Recursivo \n");
         arbolBinario.inOrderRecursivo(nodeRoot);
 
         AVLTree tree = new AVLTree();
