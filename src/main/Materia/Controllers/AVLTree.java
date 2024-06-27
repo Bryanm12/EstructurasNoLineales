@@ -33,7 +33,7 @@ public class AVLTree {
 
         //Calcular el balance
         int balance = getBalance(node);
-        System.out.println("Valor insertado: "+node.getValue()+" Balance es: "+balance);
+        System.out.println("Valor: "+node.getValue()+" Balance es: "+balance);
 
         ///si el nodo está desbalanceado se tiene 3 casos 
         
