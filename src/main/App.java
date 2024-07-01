@@ -1,7 +1,9 @@
 package main;
 
+
 import main.Materia.Controllers.AVLTree;
 import main.Materia.Controllers.ArbolBinario;
+import main.Materia.Controllers.Graph;
 import main.Materia.Models.Node;
 /*
  *            1
@@ -9,9 +11,11 @@ import main.Materia.Models.Node;
  *     4     5       6
  *    7     8
  */
+import main.Materia.Models.NodeG;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
         System.out.println("Hello, World!");
                 ArbolBinario arbolBinario = new ArbolBinario();
         Node nodeRoot = new Node(1);
@@ -43,5 +47,28 @@ public class App {
         for (int value:values){
             tree.insert(value);
         }
+
+        System.out.println("\n");
+
+        runGraph();
+    }
+
+    private static void runGraph() {
+        Graph graph = new Graph();
+
+        //Agregar
+        NodeG node1 = graph.addNode(1);
+        NodeG node2 = graph.addNode(2);
+        NodeG node3 = graph.addNode(3);
+        NodeG node4 = graph.addNode(4);
+        NodeG node5 = graph.addNode(5);
+
+        graph.addEdge(node1, node2);
+        graph.addEdge(node1, node3);
+        graph.addEdge(node2, node4);
+        graph.addEdge(node4, node5);
+
+        //imprimir 
+        graph.printGraph();
     }
 }
