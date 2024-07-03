@@ -4,6 +4,7 @@ package main;
 import main.Materia.Controllers.AVLTree;
 import main.Materia.Controllers.ArbolBinario;
 import main.Materia.Controllers.Graph;
+import main.Materia.Controllers.Sets;
 import main.Materia.Models.Node;
 /*
  *            1
@@ -70,11 +71,19 @@ public class App {
 
         //imprimir 
         graph.printGraph();
-
+        
         //graph.getDFS(node1);
-
+        
         //graph.getBFS(node1);
+        
+        //graph.printAdjacencyMatrix();
+        runSets();
+        
 
-        graph.printAdjacencyMatrix();
+
     }
+    private static void runSets(){
+        new Sets();
+    }
+    
 }
