@@ -70,5 +70,11 @@ public class App {
 
         //imprimir 
         graph.printGraph();
+
+        //graph.getDFS(node1);
+
+        //graph.getBFS(node1);
+
+        graph.printAdjacencyMatrix();
     }
 }
